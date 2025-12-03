@@ -1,12 +1,10 @@
 from dotenv import load_dotenv
 load_dotenv()
 
-import requests
 from fastapi import FastAPI, Request, HTTPException
 from fastapi.responses import JSONResponse
 import mysql.connector
 from configuration.conections import DatabaseConnection
-import os
 from service.spotify import get_user_data
 
 

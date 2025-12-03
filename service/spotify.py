@@ -3,6 +3,7 @@ load_dotenv()
 import os
 import requests
 
+
 def get_user_data(user_id: str):
     API_KEY_Public = os.getenv("client_Public_Key")
     API_KEY_Secret = os.getenv("client_Secret_Key")
